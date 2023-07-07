@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "example/proto";
+
+message Employee {
+    int32 id = 1;
+    string name = 2;
+    float salary = 3;  
+}
+
+message Employees {
+    repeated Employee employees = 1;
+} 
+
